@@ -114,14 +114,14 @@ header .header-content {
 header .header-content h1 {
   font-size: 40px;
   font-weight: 700;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   text-transform: uppercase;
   -webkit-animation-delay: 1s;
   -webkit-animation-duration: 5s;
 }
 
 header .header-content h4 {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 500;
 }
 
@@ -129,8 +129,8 @@ hr.main {
   height: 3px;
   width: 10%;
   border: none;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   background-color: #fff;
 }
 
@@ -141,6 +141,10 @@ hr.main {
   }
   header .header-content h4 {
     font-size: 54px;
+  }
+  hr.main {
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -159,6 +163,10 @@ h1.section-heading {
   margin-bottom: 30px;
 }
 
+hr {
+  border-top: 1px solid #b2b2b2;
+}
+
 @media (min-width: 768px) {
   section {
     margin-bottom: 50px;
@@ -167,11 +175,6 @@ h1.section-heading {
     font-size: 50px;
   }
 }
-
-hr {
-  border-top: 1px solid #b2b2b2;
-}
-
 
 /* --------------------------------*/
 /* ABOUT
@@ -186,6 +189,10 @@ hr {
   font-style: italic;
   color: #4c4c4c;
   line-height: 1.5;
+}
+
+p.poem-line {
+  display: none;
 }
 
 @media (min-width: 768px){
@@ -204,23 +211,36 @@ hr {
   line-height: 1.5
 }
 
-@media (min-width: 768px) {
-  #skills-description {
-    font-size: 20px;
-  }
+.typed-cursor {
+  opacity: 1;
+  color: #000;
+  font-size: 2em;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+
+@-webkit-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+
+@-moz-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
 }
 
 .devicons {
   margin-bottom: 10px;
   font-size: 50px;
-}
-
-@media (min-width: 768px) {
-  .devicons {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 70px;
-  }
 }
 
 .tooltip.top .tooltip-inner {
@@ -233,6 +253,14 @@ hr {
 }
 
 @media (min-width: 768px) {
+  #skills-description {
+    font-size: 20px;
+  }
+  .devicons {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 70px;
+  }
   .tooltip.top .tooltip-inner {
     font-size: 16px;
   }
@@ -260,6 +288,10 @@ hr {
   max-width: 250px;
 }
 
+.project-container a:focus {
+  outline: 0 !important;
+}
+
 .img-thumbnail {
   background-color: #eee;
 }
@@ -274,7 +306,7 @@ hr {
   top: 15%;
 }
 
-.modal-title{
+.modal-title {
   color: #4c4c4c;
   font-size: 30px;
   text-align: center;

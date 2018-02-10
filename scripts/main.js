@@ -2,11 +2,11 @@ $(document).ready(function() {
   // --------------------------------
   // WINDOW HEIGHT TESTING
   // --------------------------------
-  $(window).on('scroll', function() {
-    console.log("Window Height: ", $(window).height());
-    console.log("Document Height: ", $(document).height());
-    console.log("ScrollTop: ", $(window).scrollTop());
-  });
+//  $(window).on('scroll', function() {
+//    console.log("Window Height: ", $(window).height());
+//    console.log("Document Height: ", $(document).height());
+//    console.log("ScrollTop: ", $(window).scrollTop());
+//  });
   
   // --------------------------------
   // MORPHING HEADER TEXT
@@ -57,28 +57,47 @@ $(document).ready(function() {
   
   
   // --------------------------------
-  // SKILLS ICONS TOOLTIP
+  // ABOUT POEM ANIMATION
   // --------------------------------
-  $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
+  var animateAboutPoem = function() {
+    var revealLine = function() {
+      $(this).fadeIn(10000);
+    };
+
+    $.each($('p.poem-line'), revealLine);
+  };
+  
+  var scrollAboutDistance = $('#about .poem').offset().top - $(window).height() + 100;
+
+  $(window).scroll(function(event) {
+    if ($(window).scrollTop() >= scrollAboutDistance)  {
+      animateAboutPoem();
+    }
   });
   
   
   // --------------------------------
   // TYPED.JS
   // --------------------------------
-  var scrollDistance = $('#skills-description').offset().top - $(window).height() + 200;
-  var animatedString = false;
+  var scrollTypedDistance = $('#skills-description').offset().top - $(window).height() + 400;
+  var animateTypedString = false;
   $(window).scroll(function(event) {
-    if ($(window).scrollTop() >= scrollDistance && !animatedString)  {
+    if ($(window).scrollTop() >= scrollTypedDistance && !animateTypedString)  {
       var options = {
         strings: ["^1000I don't know who you are or what you want^300.^300.^300.^1000but I can tell you that I have acquired a very particular set of skills over a short span of time.^1000 While I'm always experimenting with new languages,^300 frameworks,^300 and libraries to better my arsenal,^500 the array of icons below are my primary weapons of mass creation."],
-        typeSpeed: 30,
-        showCursor: true
+        typeSpeed: 30
       }
       var typed = new Typed('#skills-description', options);
-      animatedString = true;
+      animateTypedString = true;
     }
+  });
+  
+  
+  // --------------------------------
+  // SKILLS ICONS TOOLTIP
+  // --------------------------------
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
   });
   
 
