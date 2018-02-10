@@ -1,0 +1,369 @@
+/* --------------------------------*/
+/* GLOBAL
+/* --------------------------------*/
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/* --------------------------------*/
+/* NAVIGATION
+/* --------------------------------*/
+
+.navbar-default {
+  background-color: #228b22;
+  border-color: rgba(34, 34, 34, 0.05);
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.8s;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.navbar-default .navbar-header .navbar-brand > img {
+  width: 66px;
+  height: 25px;
+}
+
+.navbar-default .nav > li > a,
+.navbar-default .nav > li > a:visited,
+.navbar-default .nav > li > a:focus {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.navbar-default .nav > li > a:hover {
+  color: #fff;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  border: 1px solid #fff;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .navbar-default {
+    background-color: transparent;
+    border-color: none;
+  }
+  .navbar-default .navbar-header .navbar-brand > img {
+    width: 79px;
+    height: 30px;
+  }
+  .navbar-default .nav > li > a,
+  .navbar-default .nav > li > a:visited,
+  .navbar-default .nav > li > a:focus  {
+    color: #fff;
+    line-height: 30px;
+  }
+  .navbar-default.scroll {
+    background-color: #228b22;
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  .navbar-default.scroll .nav > li > a,
+  .navbar-default.scroll .nav > li > a:visited,
+  .navbar-default.scroll .nav > li > a:focus {
+    color: #fff;
+  }
+  .navbar-default.scroll .nav > li > a:hover {
+    color: #fff;
+  }
+}
+
+
+/* --------------------------------*/
+/* HEADER
+/* --------------------------------*/
+
+header {
+  min-height: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-image: url('../assets/hero.jpg');
+  margin-bottom: 50px;
+}
+
+header .header-content {
+  top: 50%;   
+  text-align: center;
+  position: absolute;        
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;                
+}
+
+header .header-content h1 {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-duration: 5s;
+}
+
+header .header-content h4 {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+hr.main {
+  height: 3px;
+  width: 10%;
+  border: none;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #fff;
+}
+
+@media (min-width: 768px) {
+  header .header-content h1 {
+    font-size: 70px;
+    letter-spacing: 10px;
+  }
+  header .header-content h4 {
+    font-size: 54px;
+  }
+}
+
+
+/* --------------------------------*/
+/* SECTIONS
+/* --------------------------------*/
+
+section {
+  margin-bottom: 10px;
+}
+
+h1.section-heading {
+  color: #212529;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  section {
+    margin-bottom: 50px;
+  }
+  h1.section-heading {
+    font-size: 50px;
+  }
+}
+
+hr {
+  border-top: 1px solid #b2b2b2;
+}
+
+
+/* --------------------------------*/
+/* ABOUT
+/* --------------------------------*/
+
+#about img {
+  margin-bottom: 30px;
+}
+
+#about .poem {
+  font-size: 14px;
+  font-style: italic;
+  color: #4c4c4c;
+  line-height: 1.5;
+}
+
+@media (min-width: 768px){
+  #about .poem {
+    font-size: 18px;
+  }
+}
+
+/* --------------------------------*/
+/* SKILLS
+/* --------------------------------*/
+
+#skills-description {
+  color: #4c4c4c;
+  font-size: 16px;
+  line-height: 1.5
+}
+
+@media (min-width: 768px) {
+  #skills-description {
+    font-size: 20px;
+  }
+}
+
+.devicons {
+  margin-bottom: 10px;
+  font-size: 50px;
+}
+
+@media (min-width: 768px) {
+  .devicons {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 70px;
+  }
+}
+
+.tooltip.top .tooltip-inner {
+  font-size: 12px;
+  background-color: #228b22;
+}
+
+.tooltip.top .tooltip-arrow {
+  border-top-color: #228b22;
+}
+
+@media (min-width: 768px) {
+  .tooltip.top .tooltip-inner {
+    font-size: 16px;
+  }
+}
+
+
+/* --------------------------------*/
+/* PROJECTS
+/* --------------------------------*/
+
+.project-container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.project-title {
+  color: #4c4c4c;
+  font-size: 28px;
+  text-align: center;
+}
+
+.project-img {
+  opacity: 1;
+  max-height: 250px;
+  max-width: 250px;
+}
+
+.img-thumbnail {
+  background-color: #eee;
+}
+
+.project-text {
+  font-size: 20px;
+  display: none;
+  color: #4c4c4c;
+}
+
+.modal {
+  top: 15%;
+}
+
+.modal-title{
+  color: #4c4c4c;
+  font-size: 30px;
+  text-align: center;
+} 
+
+.modal-body {
+  text-align: center;
+}
+
+.modal-footer {
+  color: #4c4c4c;
+  font-size: 18px;
+  text-align: center;
+}
+
+.modal-footer p {
+  margin-bottom: 15px;
+}
+
+i.modal-icon {
+  font-size: 25px;
+  padding: 15px;
+}
+
+@media (min-width: 768px) {
+  .project-img {
+    max-height: 300px;
+    max-width: 300px;
+  }
+  .modal {
+    top: 10%;
+  }
+  i.modal-icon {
+    font-size: 30px;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-img {
+    max-height: 350px;
+    max-width: 350px;
+  }
+}
+
+
+/* --------------------------------*/
+/* SOCIAL MEDIA
+/* --------------------------------*/
+
+a.resume:hover {
+  text-decoration: none;
+}
+
+button.btn.btn-success {
+  color: #228b22;
+  border: 1px solid #228b22;
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+
+button.btn.btn-success:active,
+button.btn.btn-success:focus {
+  color: #228b22;
+  border: 1px solid #228b22;
+  background-color: #fff;
+  outline: 0 !important;
+  outline-offset: 0  !important;
+  background-image: none  !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none  !important;
+}
+
+button.btn.btn-success:hover {
+  color: #228b22;
+  background-color: #fff;
+}
+
+span.icon {
+  font-size: 28px;
+  padding: 16px;
+  color: #228b22;
+}
+
+@media (min-width: 768px) {
+  button.btn.btn-success {
+    margin-bottom: 50px;
+  }
+  span.icon {
+    font-size: 36px;
+  }
+}
