@@ -114,7 +114,7 @@ header .header-content {
 header .header-content h1 {
   font-size: 40px;
   font-weight: 700;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   text-transform: uppercase;
   -webkit-animation-delay: 1s;
   -webkit-animation-duration: 5s;
