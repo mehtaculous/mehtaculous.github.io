@@ -353,7 +353,7 @@ button.btn.btn-success:hover {
   background-color: #fff;
 }
 
-span.icon {
+i.icon {
   font-size: 28px;
   padding: 16px;
   color: #228b22;
@@ -363,7 +363,7 @@ span.icon {
   button.btn.btn-success {
     margin-bottom: 50px;
   }
-  span.icon {
+  i.icon {
     font-size: 36px;
   }
 }
