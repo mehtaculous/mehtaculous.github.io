@@ -208,31 +208,31 @@ p.poem-line {
 #skills-description {
   color: #4c4c4c;
   font-size: 16px;
-  line-height: 1.5
+  line-height: 2;
 }
 
 .typed-cursor {
   opacity: 1;
   color: #000;
-  font-size: 2em;
+  font-size: 20px;
   -webkit-animation: blink 0.7s infinite;
   -moz-animation: blink 0.7s infinite;
   animation: blink 0.7s infinite;
 }
 
-@keyframes blink{
+@keyframes blink {
   0% { opacity:1; }
   50% { opacity:0; }
   100% { opacity:1; }
 }
 
-@-webkit-keyframes blink{
+@-webkit-keyframes blink {
   0% { opacity:1; }
   50% { opacity:0; }
   100% { opacity:1; }
 }
 
-@-moz-keyframes blink{
+@-moz-keyframes blink {
   0% { opacity:1; }
   50% { opacity:0; }
   100% { opacity:1; }
@@ -255,6 +255,10 @@ p.poem-line {
 @media (min-width: 768px) {
   #skills-description {
     font-size: 20px;
+    line-height: 1.8;
+  }
+  .typed-cursor {
+    font-size: 24px;
   }
   .devicons {
     margin-top: 20px;
