@@ -62,7 +62,7 @@ $(document).ready(function() {
   // --------------------------------
   var animateAboutPoem = function() {
     var revealLine = function() {
-      $(this).fadeIn(9000);
+      $(this).fadeIn(8000);
     };
 
     $.each($('p.poem-line'), revealLine);
