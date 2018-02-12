@@ -13,7 +13,7 @@ $(document).ready(function() {
   // MORPHING HEADER TEXT
   // --------------------------------
   
-  $("#js-rotating").css('display', 'inline-block');
+  $("#hide").css('display', 'inline-block');
   
   $("#js-rotating").Morphext({
     animation: "flipInX",
