@@ -58,32 +58,12 @@ $(document).ready(function() {
       }
     }
   });
-  
-  
-  // --------------------------------
-  // ABOUT POEM ANIMATION
-  // --------------------------------
-  var animateAboutPoem = function() {
-    var revealLine = function() {
-      $(this).fadeIn(7000);
-    };
 
-    $.each($('p.poem-line'), revealLine);
-  };
-  
-  var scrollAboutDistance = $('#about .poem').offset().top - $(window).height() + 100;
-
-  $(window).scroll(function(event) {
-    if ($(window).scrollTop() >= scrollAboutDistance)  {
-      animateAboutPoem();
-    }
-  });
-  
   
   // --------------------------------
   // TYPED.JS
   // --------------------------------
-  var scrollTypedDistance = $('#skills-description').offset().top - $(window).height() + 400;
+  var scrollTypedDistance = $('#skills-description').offset().top - $(window).height() + 300;
   var animateTypedString = false;
   $(window).scroll(function(event) {
     if ($(window).scrollTop() >= scrollTypedDistance && !animateTypedString)  {
