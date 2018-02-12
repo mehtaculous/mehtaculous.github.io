@@ -12,6 +12,9 @@ $(document).ready(function() {
   // --------------------------------
   // MORPHING HEADER TEXT
   // --------------------------------
+  
+  $("#js-rotating").css('display', 'inline-block');
+  
   $("#js-rotating").Morphext({
     animation: "flipInX",
     separator: "|",
@@ -62,7 +65,7 @@ $(document).ready(function() {
   // --------------------------------
   var animateAboutPoem = function() {
     var revealLine = function() {
-      $(this).fadeIn(8000);
+      $(this).fadeIn(7000);
     };
 
     $.each($('p.poem-line'), revealLine);
@@ -86,7 +89,7 @@ $(document).ready(function() {
     if ($(window).scrollTop() >= scrollTypedDistance && !animateTypedString)  {
       var options = {
         strings: ["^1000I don't know who you are or what you want^300.^300.^300.^300but I can tell you that I have acquired a very particular set of skills over a short span of time.^1000 While I'm always experimenting with new languages,^300 frameworks,^300 and libraries to better my arsenal,^500 the array of icons below are my primary weapons of mass creation."],
-        typeSpeed: 30
+        typeSpeed: 35
       }
       var typed = new Typed('#skills-description', options);
       animateTypedString = true;

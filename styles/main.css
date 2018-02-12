@@ -125,6 +125,10 @@ header .header-content h4 {
   font-weight: 500;
 }
 
+#js-rotating {
+  display: none;
+}
+
 hr.main {
   height: 3px;
   width: 10%;
