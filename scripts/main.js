@@ -12,7 +12,6 @@ $(document).ready(function() {
   // --------------------------------
   // MORPHING HEADER TEXT
   // --------------------------------
-  
   $("#hide").css('display', 'inline-block');
   
   $("#js-rotating").Morphext({
@@ -37,9 +36,8 @@ $(document).ready(function() {
       $('.navbar').removeClass('scroll');
     }
   };
-    
-  checkScroll();
   
+  checkScroll();
   $(window).scroll(checkScroll);
   
   
@@ -68,7 +66,7 @@ $(document).ready(function() {
   $(window).scroll(function(event) {
     if ($(window).scrollTop() >= scrollTypedDistance && !animateTypedString)  {
       var options = {
-        strings: ["^1000I don't know who you are or what you want^300.^300.^300.^300but I can tell you that I have acquired a very particular set of skills over a short span of time.^1000 While I'm always experimenting with new languages,^300 frameworks,^300 and libraries to better my arsenal,^500 the array of icons below are my primary weapons of mass creation."],
+        strings: ["^500I don't know who you are or what you want^300.^300.^300.^300but I can tell you that I have acquired a very particular set of skills over a short span of time.^1000 While I'm always experimenting with new languages,^300 frameworks,^300 and libraries to better my arsenal,^500 the array of icons below are my primary weapons of mass creation."],
         typeSpeed: 35
       }
       var typed = new Typed('#skills-description', options);
