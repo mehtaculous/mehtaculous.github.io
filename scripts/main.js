@@ -61,7 +61,7 @@ $(document).ready(function() {
   // --------------------------------
   // ANIMATE POEM
   // --------------------------------
-  var scrollDistance = $('#about .poem').offset().top - $(window).height() + 200;
+  var scrollDistance = $('#about .poem').offset().top - $(window).height() + 150;
   
   $(window).scroll(function(event) {
     if ($(window).scrollTop() >= scrollDistance) {
