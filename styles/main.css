@@ -1,6 +1,6 @@
-/* --------------------------------*/
+/* -------------------------------- */
 /* GLOBAL
-/* --------------------------------*/
+/* -------------------------------- */
 html, body {
   width: 100%;
   height: 100%;
@@ -12,9 +12,9 @@ body {
 }
 
 
-/* --------------------------------*/
+/* -------------------------------- */
 /* NAVIGATION
-/* --------------------------------*/
+/* -------------------------------- */
 .navbar-default {
   background-color: #228b22;
   border-color: rgba(34, 34, 34, 0.05);
@@ -35,6 +35,7 @@ body {
 .navbar-default .nav > li > a:focus {
   color: #fff;
   font-size: 16px;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
@@ -81,9 +82,9 @@ body {
 }
 
 
-/* --------------------------------*/
+/* -------------------------------- */
 /* HEADER CONTENT
-/* --------------------------------*/
+/* -------------------------------- */
 header {
   min-height: 100%;
   position: relative;
@@ -113,26 +114,17 @@ header .header-content h1 {
   font-weight: 800;
   letter-spacing: 3px;
   text-transform: uppercase;
-  -webkit-animation-delay: 1s;
-  -webkit-animation-duration: 5s;
 }
 
 header .header-content h4 {
   font-size: 32px;
-  font-weight: 500;
+  font-weight: 500;  
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #hide {
   display: none;
-}
-
-hr.main {
-  height: 3px;
-  width: 10%;
-  border: none;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  background-color: #fff;
 }
 
 @media (min-width: 768px) {
@@ -143,16 +135,12 @@ hr.main {
   header .header-content h4 {
     font-size: 54px;
   }
-  hr.main {
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
 }
 
 
-/* --------------------------------*/
+/* -------------------------------- */
 /* SECTIONS
-/* --------------------------------*/
+/* -------------------------------- */
 section {
   margin-bottom: 10px;
 }
@@ -176,9 +164,9 @@ hr {
   }
 }
 
-/* --------------------------------*/
+/* -------------------------------- */
 /* ABOUT
-/* --------------------------------*/
+/* -------------------------------- */
 #about img {
   margin-bottom: 30px;
 }
@@ -206,9 +194,9 @@ hr {
   }
 }
 
-/* --------------------------------*/
+/* -------------------------------- */
 /* SKILLS
-/* --------------------------------*/
+/* -------------------------------- */
 #skills-description {
   color: #4c4c4c;
   font-size: 16px;
@@ -275,9 +263,9 @@ hr {
 }
 
 
-/* --------------------------------*/
+/* -------------------------------- */
 /* PROJECTS
-/* --------------------------------*/
+/* -------------------------------- */
 .project-container {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -360,9 +348,9 @@ i.modal-icon {
 }
 
 
-/* --------------------------------*/
+/* -------------------------------- */
 /* SOCIAL MEDIA
-/* --------------------------------*/
+/* -------------------------------- */
 a.resume:hover {
   text-decoration: none;
 }

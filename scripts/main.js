@@ -61,16 +61,16 @@ $(document).ready(function() {
   // --------------------------------
   // ANIMATE POEM
   // --------------------------------
-  var scrollDistance = $('#about .poem').offset().top - $(window).height() + 150;
-  
-  $(window).scroll(function(event) {
-    if ($(window).scrollTop() >= scrollDistance) {
-      $('#about .poem').css({
-        opacity: 1,
-        transform: 'scaleX(1) translateY(0)'
-      });
-    }
-  });
+//  var scrollDistance = $('#about .poem').offset().top - $(window).height() + 150;
+//  
+//  $(window).scroll(function(event) {
+//    if ($(window).scrollTop() >= scrollDistance) {
+//      $('#about .poem').css({
+//        opacity: 1,
+//        transform: 'scaleX(1) translateY(0)'
+//      });
+//    }
+//  });
 
   
   // --------------------------------
