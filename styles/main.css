@@ -359,9 +359,10 @@ a.resume:hover {
 
 button.btn.btn-success {
   color: #228b22;
+  font-size: 14px;
   border: 1px solid #228b22;
   background-color: #fff;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 button.btn.btn-success:active,
@@ -377,8 +378,8 @@ button.btn.btn-success:focus {
 }
 
 button.btn.btn-success:hover {
-  color: #228b22;
-  background-color: #fff;
+  color: #fff;
+  background-color: #228b22;
 }
 
 i.icon {
@@ -389,7 +390,8 @@ i.icon {
 
 @media (min-width: 768px) {
   button.btn.btn-success {
-    margin-bottom: 50px;
+    font-size: 16px;
+    margin-bottom: 30px;
   }
   i.icon {
     font-size: 36px;
