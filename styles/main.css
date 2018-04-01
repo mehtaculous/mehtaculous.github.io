@@ -123,6 +123,25 @@ header .header-content h4 {
   margin-bottom: 20px;
 }
 
+/*
+header .header-quote {
+  top: 90%;
+  text-align: center;
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+header .header-quote p {
+  font-size: 16px;
+  font-style: oblique;
+  letter-spacing: 1px;
+}
+*/
+
 #hide {
   display: none;
 }
@@ -137,6 +156,11 @@ header .header-content h4 {
     margin-top: 25px;
     margin-bottom: 25px;
   }
+/*
+  header .header-quote p {
+    font-size: 20px;
+  }
+*/
 }
 
 
@@ -167,32 +191,38 @@ hr {
 }
 
 /* -------------------------------- */
-/* ABOUT
+/* MEDIUM
 /* -------------------------------- */
-#about img {
+#blog img {
   margin-bottom: 30px;
+  height: 90px;
 }
 
-#about .poem {
-  font-size: 14px;
-  font-style: italic;
-  color: #4c4c4c;
-  line-height: 1.5;
-  opacity: 0;
-  -webkit-transform: scaleX(0.9) translateY(3rem);
-  -moz-transform: scaleX(0.9) translateY(3rem);
-  transform: scaleX(0.9) translateY(3rem);
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  -webkit-transition-delay: 0.2s;
-  -moz-transition-delay: 0.2s;
-  transition-delay: 0.2s;
+#blog .post {
+  border: 1px solid #228b22;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+#blog .post:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.pagination > .active > a {
+  background-color: #228b22;
+}
+
+.pagination > .active > a:hover {
+  background-color: #228b22;
+}
+
+.pagination > li > a:focus {
+  color: #337ab7;
+  background-color: transparent;
 }
 
 @media (min-width: 768px){
-  #about .poem {
-    font-size: 18px;
+  #blog img {
+    height: 150px;
   }
 }
 
@@ -353,6 +383,14 @@ i.modal-icon {
 /* -------------------------------- */
 /* SOCIAL MEDIA
 /* -------------------------------- */
+#social .quote {
+  color: #4c4c4c;
+  font-size: 16px;
+  margin-bottom: 40px;
+  font-style: oblique;
+  line-height: 1.8;
+}
+
 a.resume:hover {
   text-decoration: none;
 }
@@ -389,6 +427,10 @@ i.icon {
 }
 
 @media (min-width: 768px) {
+  #social .quote {
+    font-size: 18px; 
+    margin-top: -30px;
+  }
   button.btn.btn-success {
     font-size: 16px;
     margin-bottom: 30px;
