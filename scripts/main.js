@@ -2,11 +2,11 @@ $(document).ready(function() {
   // --------------------------------
   // WINDOW HEIGHT TESTING
   // --------------------------------
-//  $(window).on('scroll', function() {
-//    console.log("Window Height: ", $(window).height());
-//    console.log("Document Height: ", $(document).height());
-//    console.log("ScrollTop: ", $(window).scrollTop());
-//  });
+  //  $(window).on('scroll', function() {
+  //    console.log("Window Height: ", $(window).height());
+  //    console.log("Document Height: ", $(document).height());
+  //    console.log("ScrollTop: ", $(window).scrollTop());
+  //  });
 
 
   // --------------------------------

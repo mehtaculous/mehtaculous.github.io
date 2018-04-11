@@ -1,1 +1,3 @@
-## [Portfolio](https://mehtaculous.github.io): A showcase of my personal projects
+## [Portfolio](https://mehtaculous.github.io)
+
+A compilation of stories, skills, and projects that provide insight into my experience as a full stack developer
