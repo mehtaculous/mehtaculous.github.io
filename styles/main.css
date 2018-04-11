@@ -190,6 +190,26 @@ hr {
   }
 }
 
+
+/* -------------------------------- */
+/* MEDIUM
+/* -------------------------------- */
+.about-description {
+  color: #4c4c4c;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .about-description {
+    font-size: 18px;
+    line-height: 2;
+    margin-bottom: 30px;
+  }
+}
+
+
 /* -------------------------------- */
 /* MEDIUM
 /* -------------------------------- */
