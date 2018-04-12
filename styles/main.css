@@ -152,13 +152,13 @@ header .header-quote p {
     letter-spacing: 10px;
   }
   header .header-content h4 {
-    font-size: 54px;
+    font-size: 50px;
     margin-top: 25px;
     margin-bottom: 25px;
   }
   header .header-quote p {
     font-size: 20px;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
   }
 }
 
@@ -202,7 +202,7 @@ hr {
 
 @media (min-width: 768px) {
   .about-description {
-    font-size: 18px;
+    font-size: 19px;
     line-height: 2;
     margin-bottom: 30px;
   }
