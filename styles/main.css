@@ -123,25 +123,6 @@ header .header-content h4 {
   margin-bottom: 20px;
 }
 
-header .header-quote {
-  top: 95%;
-  text-align: center;
-  position: absolute;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  width: 100%;
-  text-transform: uppercase;
-}
-
-header .header-quote p {
-  font-size: 16px;
-  font-style: oblique;
-  letter-spacing: 1px;
-  text-shadow: 2px 2px #4c4c4c;
-}
-
 #hide {
   display: none;
 }
@@ -155,10 +136,6 @@ header .header-quote p {
     font-size: 50px;
     margin-top: 25px;
     margin-bottom: 25px;
-  }
-  header .header-quote p {
-    font-size: 20px;
-    letter-spacing: 3px;
   }
 }
 
