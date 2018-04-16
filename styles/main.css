@@ -422,6 +422,10 @@ i.icon {
   color: #228b22;
 }
 
+i.icon:hover {
+  color: #186218;
+}
+
 #social a:active, 
 #social a:focus {
   text-decoration: none;
