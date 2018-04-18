@@ -174,14 +174,39 @@ hr {
   color: #4c4c4c;
   font-size: 15px;
   line-height: 1.8;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  text-align: justify;
+  text-align-last: center;
+}
+
+i.icon {
+  font-size: 36px;
+  padding: 10px;
+  color: #228b22;
+}
+
+i.icon:hover {
+  color: #186218;
+}
+
+#about a:active, 
+#about a:focus {
+  text-decoration: none;
+}
+
+#about a:hover {
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {
   .about-description {
     font-size: 19px;
     line-height: 2;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+  }
+  i.icon {
+    padding: 12px;
+    font-size: 42px;
   }
 }
 
@@ -231,6 +256,11 @@ hr {
   line-height: 2;
 }
 
+#skills p {
+  text-align: justify;
+  text-align-last: center;
+}
+
 .typed-cursor {
   opacity: 1;
   color: #000;
@@ -275,7 +305,7 @@ hr {
 @media (min-width: 768px) {
   #skills-description {
     font-size: 20px;
-    line-height: 1.8;
+    line-height: 2;
   }
   .typed-cursor {
     font-size: 24px;
@@ -377,9 +407,9 @@ i.modal-icon {
 
 
 /* -------------------------------- */
-/* SOCIAL MEDIA
+/* FOOTER
 /* -------------------------------- */
-#social .quote {
+#footer .quote {
   color: #4c4c4c;
   font-size: 16px;
   margin-bottom: 40px;
@@ -387,65 +417,9 @@ i.modal-icon {
   line-height: 1.8;
 }
 
-a.resume:hover {
-  text-decoration: none;
-}
-
-button.btn.btn-success {
-  color: #228b22;
-  font-size: 14px;
-  border: 1px solid #228b22;
-  background-color: #fff;
-  margin-bottom: 20px;
-}
-
-button.btn.btn-success:active,
-button.btn.btn-success:focus {
-  color: #228b22;
-  border: 1px solid #228b22;
-  background-color: #fff;
-  outline: 0 !important;
-  outline-offset: 0  !important;
-  background-image: none  !important;
-  -webkit-box-shadow: none !important;
-  box-shadow: none  !important;
-}
-
-button.btn.btn-success:hover {
-  color: #fff;
-  background-color: #228b22;
-}
-
-i.icon {
-  font-size: 36px;
-  padding: 10px;
-  color: #228b22;
-}
-
-i.icon:hover {
-  color: #186218;
-}
-
-#social a:active, 
-#social a:focus {
-  text-decoration: none;
-}
-
-#social a:hover {
-  text-decoration: none;
-}
-
 @media (min-width: 768px) {
-  #social .quote {
+  #footer .quote {
     font-size: 18px; 
     margin-top: -30px;
-  }
-  button.btn.btn-success {
-    font-size: 16px;
-    margin-bottom: 30px;
-  }
-  i.icon {
-    padding: 12px;
-    font-size: 42px;
   }
 }
