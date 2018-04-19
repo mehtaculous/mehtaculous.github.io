@@ -174,9 +174,8 @@ hr {
   color: #4c4c4c;
   font-size: 15px;
   line-height: 1.8;
-  margin-bottom: 10px;
-  text-align: justify;
-  text-align-last: center;
+  margin-bottom: 20px;
+  
 }
 
 i.icon {
@@ -202,7 +201,8 @@ i.icon:hover {
   .about-description {
     font-size: 19px;
     line-height: 2;
-    margin-bottom: 20px;
+    text-align: justify;
+    text-align-last: center;
   }
   i.icon {
     padding: 12px;
@@ -256,11 +256,6 @@ i.icon:hover {
   line-height: 2;
 }
 
-#skills p {
-  text-align: justify;
-  text-align-last: center;
-}
-
 .typed-cursor {
   opacity: 1;
   color: #000;
@@ -306,6 +301,10 @@ i.icon:hover {
   #skills-description {
     font-size: 20px;
     line-height: 2;
+  }
+  #skills p {
+    text-align: justify;
+    text-align-last: center;
   }
   .typed-cursor {
     font-size: 24px;
