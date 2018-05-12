@@ -175,6 +175,8 @@ hr {
   font-size: 15px;
   line-height: 1.8;
   margin-bottom: 20px;
+  text-align: justify;
+  text-align-last: center;
 }
 
 i.icon {
@@ -200,8 +202,6 @@ i.icon:hover {
   .about-description {
     font-size: 19px;
     line-height: 2;
-    text-align: justify;
-    text-align-last: center;
   }
   i.icon {
     padding: 12px;
