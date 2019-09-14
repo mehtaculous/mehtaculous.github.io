@@ -200,7 +200,7 @@ i.icon:hover {
 
 @media (min-width: 768px) {
   .about-description {
-    font-size: 19px;
+    font-size: 18px;
     line-height: 2;
   }
   i.icon {
