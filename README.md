@@ -1,3 +1,3 @@
 ## [Portfolio](https://mehtaculous.github.io)
 
-A compilation of stories, skills, and projects that provide insight into my developer journey
+A compilation of stories, skills, projects, and accomplishments that provide insight into my developer journey
